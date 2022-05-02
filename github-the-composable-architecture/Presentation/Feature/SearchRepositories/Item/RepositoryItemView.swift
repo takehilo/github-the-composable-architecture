@@ -1,5 +1,6 @@
 import SwiftUI
 import ComposableArchitecture
+import Kingfisher
 
 struct RepositoryItemView: View {
     let store: Store<RepositoryItemCore.State, RepositoryItemCore.Action>
@@ -12,6 +13,9 @@ struct RepositoryItemView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
+            KFAnimatedImage(viewStore.image)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 150, height: 100)
             Text(viewStore.name)
                 .font(.title)
             Text(viewStore.description ?? "")

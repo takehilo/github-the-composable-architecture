@@ -16,6 +16,7 @@ extension RepositoryItemCore {
         let name: String
         let description: String?
         let stars: Int
+        let image = URL(string: "https://picsum.photos/id/\(Int.random(in: 0...100))/300/200")!
     }
 }
 
