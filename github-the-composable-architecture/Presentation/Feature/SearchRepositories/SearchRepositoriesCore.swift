@@ -10,12 +10,6 @@ extension SearchRepositoriesCore {
     }
 }
 
-struct Repo: Identifiable, Equatable {
-    let id: Int
-    let name: String
-    let stars: Int
-}
-
 // MARK: - ViewState
 extension SearchRepositoriesCore {
     struct ViewState: Equatable {
