@@ -9,6 +9,6 @@ struct SearchRepoRequest: GitHubAPIBaseRequest {
     init(
         query: String
     ) {
-        self.queryParameters = ["q": query]
+        self.queryParameters = ["q": query, "per_page": 100]
     }
 }
