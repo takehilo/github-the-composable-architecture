@@ -33,6 +33,20 @@
 		6237815B28203273003FA834 /* APIClient+noop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237815A28203273003FA834 /* APIClient+noop.swift */; };
 		6237815F28203D2D003FA834 /* RepositoryItemCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237815D28203D2D003FA834 /* RepositoryItemCore.swift */; };
 		6237816028203D2D003FA834 /* RepositoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237815E28203D2D003FA834 /* RepositoryItemView.swift */; };
+		6237816728205166003FA834 /* BronzeItemCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237816528205166003FA834 /* BronzeItemCore.swift */; };
+		6237816828205166003FA834 /* BronzeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237816628205166003FA834 /* BronzeItemView.swift */; };
+		6237816F28205212003FA834 /* SilverItemCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237816D28205212003FA834 /* SilverItemCore.swift */; };
+		6237817028205212003FA834 /* SilverItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237816E28205212003FA834 /* SilverItemView.swift */; };
+		623781732820521C003FA834 /* GoldItemCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623781712820521B003FA834 /* GoldItemCore.swift */; };
+		623781742820521C003FA834 /* GoldItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623781722820521B003FA834 /* GoldItemView.swift */; };
+		6237817728205227003FA834 /* PlatinumItemCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237817528205227003FA834 /* PlatinumItemCore.swift */; };
+		6237817828205227003FA834 /* PlatinumItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237817628205227003FA834 /* PlatinumItemView.swift */; };
+		6237817B28205233003FA834 /* DiamondItemCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237817928205233003FA834 /* DiamondItemCore.swift */; };
+		6237817C28205233003FA834 /* DiamondItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237817A28205233003FA834 /* DiamondItemView.swift */; };
+		6237817F28205319003FA834 /* RankedSearchRepositoriesCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237817D28205319003FA834 /* RankedSearchRepositoriesCore.swift */; };
+		6237818028205319003FA834 /* RankedSearchRepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237817E28205319003FA834 /* RankedSearchRepositoriesView.swift */; };
+		6237818528205387003FA834 /* RankedItemCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237818328205387003FA834 /* RankedItemCore.swift */; };
+		6237818628205387003FA834 /* RankedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6237818428205387003FA834 /* RankedItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +93,20 @@
 		6237815A28203273003FA834 /* APIClient+noop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIClient+noop.swift"; sourceTree = "<group>"; };
 		6237815D28203D2D003FA834 /* RepositoryItemCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItemCore.swift; sourceTree = "<group>"; };
 		6237815E28203D2D003FA834 /* RepositoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItemView.swift; sourceTree = "<group>"; };
+		6237816528205166003FA834 /* BronzeItemCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BronzeItemCore.swift; sourceTree = "<group>"; };
+		6237816628205166003FA834 /* BronzeItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BronzeItemView.swift; sourceTree = "<group>"; };
+		6237816D28205212003FA834 /* SilverItemCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverItemCore.swift; sourceTree = "<group>"; };
+		6237816E28205212003FA834 /* SilverItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverItemView.swift; sourceTree = "<group>"; };
+		623781712820521B003FA834 /* GoldItemCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldItemCore.swift; sourceTree = "<group>"; };
+		623781722820521B003FA834 /* GoldItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldItemView.swift; sourceTree = "<group>"; };
+		6237817528205227003FA834 /* PlatinumItemCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumItemCore.swift; sourceTree = "<group>"; };
+		6237817628205227003FA834 /* PlatinumItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumItemView.swift; sourceTree = "<group>"; };
+		6237817928205233003FA834 /* DiamondItemCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondItemCore.swift; sourceTree = "<group>"; };
+		6237817A28205233003FA834 /* DiamondItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondItemView.swift; sourceTree = "<group>"; };
+		6237817D28205319003FA834 /* RankedSearchRepositoriesCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedSearchRepositoriesCore.swift; sourceTree = "<group>"; };
+		6237817E28205319003FA834 /* RankedSearchRepositoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedSearchRepositoriesView.swift; sourceTree = "<group>"; };
+		6237818328205387003FA834 /* RankedItemCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedItemCore.swift; sourceTree = "<group>"; };
+		6237818428205387003FA834 /* RankedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankedItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +271,7 @@
 		6237814928202F73003FA834 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				6237818128205336003FA834 /* RankedSearchRepositories */,
 				6237814F28202FF9003FA834 /* App */,
 				6237814A28202F78003FA834 /* SearchRepositories */,
 			);
@@ -275,6 +304,75 @@
 				6237815E28203D2D003FA834 /* RepositoryItemView.swift */,
 			);
 			path = Item;
+			sourceTree = "<group>";
+		};
+		62378164282050DE003FA834 /* BronzeItem */ = {
+			isa = PBXGroup;
+			children = (
+				6237816528205166003FA834 /* BronzeItemCore.swift */,
+				6237816628205166003FA834 /* BronzeItemView.swift */,
+			);
+			path = BronzeItem;
+			sourceTree = "<group>";
+		};
+		623781692820516E003FA834 /* SilverItem */ = {
+			isa = PBXGroup;
+			children = (
+				6237816D28205212003FA834 /* SilverItemCore.swift */,
+				6237816E28205212003FA834 /* SilverItemView.swift */,
+			);
+			path = SilverItem;
+			sourceTree = "<group>";
+		};
+		6237816A2820517E003FA834 /* GoldItem */ = {
+			isa = PBXGroup;
+			children = (
+				623781712820521B003FA834 /* GoldItemCore.swift */,
+				623781722820521B003FA834 /* GoldItemView.swift */,
+			);
+			path = GoldItem;
+			sourceTree = "<group>";
+		};
+		6237816B28205185003FA834 /* PlatinumItem */ = {
+			isa = PBXGroup;
+			children = (
+				6237817528205227003FA834 /* PlatinumItemCore.swift */,
+				6237817628205227003FA834 /* PlatinumItemView.swift */,
+			);
+			path = PlatinumItem;
+			sourceTree = "<group>";
+		};
+		6237816C28205195003FA834 /* DiamondItem */ = {
+			isa = PBXGroup;
+			children = (
+				6237817928205233003FA834 /* DiamondItemCore.swift */,
+				6237817A28205233003FA834 /* DiamondItemView.swift */,
+			);
+			path = DiamondItem;
+			sourceTree = "<group>";
+		};
+		6237818128205336003FA834 /* RankedSearchRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				6237818228205348003FA834 /* RankedItem */,
+				6237817D28205319003FA834 /* RankedSearchRepositoriesCore.swift */,
+				6237817E28205319003FA834 /* RankedSearchRepositoriesView.swift */,
+			);
+			path = RankedSearchRepositories;
+			sourceTree = "<group>";
+		};
+		6237818228205348003FA834 /* RankedItem */ = {
+			isa = PBXGroup;
+			children = (
+				6237818328205387003FA834 /* RankedItemCore.swift */,
+				6237818428205387003FA834 /* RankedItemView.swift */,
+				6237816C28205195003FA834 /* DiamondItem */,
+				6237816B28205185003FA834 /* PlatinumItem */,
+				6237816A2820517E003FA834 /* GoldItem */,
+				623781692820516E003FA834 /* SilverItem */,
+				62378164282050DE003FA834 /* BronzeItem */,
+			);
+			path = RankedItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,23 +516,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				6237815F28203D2D003FA834 /* RepositoryItemCore.swift in Sources */,
+				6237817828205227003FA834 /* PlatinumItemView.swift in Sources */,
 				6237816028203D2D003FA834 /* RepositoryItemView.swift in Sources */,
 				6237814428202E2C003FA834 /* GitHubRepository.swift in Sources */,
 				62378131282023AC003FA834 /* RequestProxy.swift in Sources */,
+				6237817028205212003FA834 /* SilverItemView.swift in Sources */,
+				623781742820521C003FA834 /* GoldItemView.swift in Sources */,
 				6237814728202EB1003FA834 /* GitHubRepositoryImpl.swift in Sources */,
 				62378133282023CB003FA834 /* GitHubAPIBaseRequest.swift in Sources */,
 				623781592820316A003FA834 /* AppView.swift in Sources */,
+				6237817C28205233003FA834 /* DiamondItemView.swift in Sources */,
+				623781732820521C003FA834 /* GoldItemCore.swift in Sources */,
 				620C3E0A28201F7D009EF5C4 /* App.swift in Sources */,
 				6237814E28202FC3003FA834 /* SearchRepositoriesView.swift in Sources */,
+				6237818628205387003FA834 /* RankedItemView.swift in Sources */,
+				6237816828205166003FA834 /* BronzeItemView.swift in Sources */,
+				6237818028205319003FA834 /* RankedSearchRepositoriesView.swift in Sources */,
+				6237818528205387003FA834 /* RankedItemCore.swift in Sources */,
+				6237817F28205319003FA834 /* RankedSearchRepositoriesCore.swift in Sources */,
 				6237812F2820238E003FA834 /* BaseRequest.swift in Sources */,
 				6237813528202447003FA834 /* APIClient.swift in Sources */,
 				6237815228203001003FA834 /* AppCore.swift in Sources */,
+				6237816728205166003FA834 /* BronzeItemCore.swift in Sources */,
 				623781392820261B003FA834 /* APIErrorConverter.swift in Sources */,
 				6237814128202DC4003FA834 /* SearchRepoRequest.swift in Sources */,
 				6237813F28202A2E003FA834 /* SearchRepoDto.swift in Sources */,
 				6237813728202550003FA834 /* APIError.swift in Sources */,
 				6237814D28202FC3003FA834 /* SearchRepositoriesCore.swift in Sources */,
+				6237817B28205233003FA834 /* DiamondItemCore.swift in Sources */,
+				6237816F28205212003FA834 /* SilverItemCore.swift in Sources */,
 				6237815B28203273003FA834 /* APIClient+noop.swift in Sources */,
+				6237817728205227003FA834 /* PlatinumItemCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

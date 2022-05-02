@@ -6,6 +6,7 @@ enum AppCore {}
 extension AppCore {
     struct State: Equatable {
         var searchRepositories = SearchRepositoriesCore.State()
+        var rankedSearchRepositories = RankedSearchRepositoriesCore.State()
         let viewState = ViewState()
     }
 }
@@ -20,6 +21,7 @@ extension AppCore {
 extension AppCore {
     enum Action: Equatable {
         case searchRepositories(SearchRepositoriesCore.Action)
+        case rankedSearchRepositories(RankedSearchRepositoriesCore.Action)
     }
 }
 
@@ -38,6 +40,16 @@ extension AppCore {
             .pullback(
                 state: \.searchRepositories,
                 action: /Action.searchRepositories,
+                environment: {
+                    .init(
+                        scheduler: $0.scheduler,
+                        gitHubRepository: $0.gitHubRepository
+                    )
+                }),
+        RankedSearchRepositoriesCore.reducer
+            .pullback(
+                state: \.rankedSearchRepositories,
+                action: /Action.rankedSearchRepositories,
                 environment: {
                     .init(
                         scheduler: $0.scheduler,

@@ -11,10 +11,10 @@ struct AppView: View {
     }
 
     var body: some View {
-        SearchRepositoriesView(
+        RankedSearchRepositoriesView(
             store: store.scope(
-                state: \.searchRepositories,
-                action: AppCore.Action.searchRepositories))
+                state: \.rankedSearchRepositories,
+                action: AppCore.Action.rankedSearchRepositories))
     }
 }
 
