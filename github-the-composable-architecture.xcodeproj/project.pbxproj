@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		620C3E0A28201F7D009EF5C4 /* github_the_composable_architectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C3E0928201F7D009EF5C4 /* github_the_composable_architectureApp.swift */; };
+		620C3E0A28201F7D009EF5C4 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C3E0928201F7D009EF5C4 /* App.swift */; };
 		620C3E0C28201F7D009EF5C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C3E0B28201F7D009EF5C4 /* ContentView.swift */; };
 		620C3E0E28201F81009EF5C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620C3E0D28201F81009EF5C4 /* Assets.xcassets */; };
 		620C3E1128201F81009EF5C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620C3E1028201F81009EF5C4 /* Preview Assets.xcassets */; };
 		620C3E1B28201F81009EF5C4 /* github_the_composable_architectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C3E1A28201F81009EF5C4 /* github_the_composable_architectureTests.swift */; };
 		620C3E2528201F81009EF5C4 /* github_the_composable_architectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C3E2428201F81009EF5C4 /* github_the_composable_architectureUITests.swift */; };
 		620C3E2728201F81009EF5C4 /* github_the_composable_architectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620C3E2628201F81009EF5C4 /* github_the_composable_architectureUITestsLaunchTests.swift */; };
+		620C3E352820201C009EF5C4 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 620C3E342820201C009EF5C4 /* ComposableArchitecture */; };
+		620C3E3828202117009EF5C4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 620C3E3728202117009EF5C4 /* Kingfisher */; };
+		620C3E3B282021E1009EF5C4 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 620C3E3A282021E1009EF5C4 /* APIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		620C3E0628201F7D009EF5C4 /* github-the-composable-architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "github-the-composable-architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		620C3E0928201F7D009EF5C4 /* github_the_composable_architectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = github_the_composable_architectureApp.swift; sourceTree = "<group>"; };
+		620C3E0928201F7D009EF5C4 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		620C3E0B28201F7D009EF5C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		620C3E0D28201F81009EF5C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		620C3E1028201F81009EF5C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620C3E3828202117009EF5C4 /* Kingfisher in Frameworks */,
+				620C3E352820201C009EF5C4 /* ComposableArchitecture in Frameworks */,
+				620C3E3B282021E1009EF5C4 /* APIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +100,7 @@
 		620C3E0828201F7D009EF5C4 /* github-the-composable-architecture */ = {
 			isa = PBXGroup;
 			children = (
-				620C3E0928201F7D009EF5C4 /* github_the_composable_architectureApp.swift */,
+				620C3E0928201F7D009EF5C4 /* App.swift */,
 				620C3E0B28201F7D009EF5C4 /* ContentView.swift */,
 				620C3E0D28201F81009EF5C4 /* Assets.xcassets */,
 				620C3E0F28201F81009EF5C4 /* Preview Content */,
@@ -143,6 +149,11 @@
 			dependencies = (
 			);
 			name = "github-the-composable-architecture";
+			packageProductDependencies = (
+				620C3E342820201C009EF5C4 /* ComposableArchitecture */,
+				620C3E3728202117009EF5C4 /* Kingfisher */,
+				620C3E3A282021E1009EF5C4 /* APIKit */,
+			);
 			productName = "github-the-composable-architecture";
 			productReference = 620C3E0628201F7D009EF5C4 /* github-the-composable-architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,11 @@
 				Base,
 			);
 			mainGroup = 620C3DFD28201F7D009EF5C4;
+			packageReferences = (
+				620C3E332820201C009EF5C4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				620C3E3628202117009EF5C4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				620C3E39282021E1009EF5C4 /* XCRemoteSwiftPackageReference "APIKit" */,
+			);
 			productRefGroup = 620C3E0728201F7D009EF5C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				620C3E0C28201F7D009EF5C4 /* ContentView.swift in Sources */,
-				620C3E0A28201F7D009EF5C4 /* github_the_composable_architectureApp.swift in Sources */,
+				620C3E0A28201F7D009EF5C4 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +599,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		620C3E332820201C009EF5C4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.34.0;
+			};
+		};
+		620C3E3628202117009EF5C4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.2.1;
+			};
+		};
+		620C3E39282021E1009EF5C4 /* XCRemoteSwiftPackageReference "APIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ishkawa/APIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		620C3E342820201C009EF5C4 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 620C3E332820201C009EF5C4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		620C3E3728202117009EF5C4 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 620C3E3628202117009EF5C4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		620C3E3A282021E1009EF5C4 /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 620C3E39282021E1009EF5C4 /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 620C3DFE28201F7D009EF5C4 /* Project object */;
 }

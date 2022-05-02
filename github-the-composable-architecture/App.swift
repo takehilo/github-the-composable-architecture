@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct github_the_composable_architectureApp: App {
+struct GitHubApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
