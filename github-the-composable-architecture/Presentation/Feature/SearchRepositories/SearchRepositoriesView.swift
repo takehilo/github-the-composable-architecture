@@ -25,6 +25,9 @@ struct SearchRepositoriesView: View {
                     get: \.query,
                     send: SearchRepositoriesCore.Action.queryChanged))
         }
+        .onAppear {
+            viewStore.send(.onAppear)
+        }
     }
 }
 

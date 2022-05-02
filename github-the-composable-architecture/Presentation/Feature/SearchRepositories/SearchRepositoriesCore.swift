@@ -26,6 +26,7 @@ extension SearchRepositoriesCore {
 // MARK: - Action
 extension SearchRepositoriesCore {
     enum Action: Equatable {
+        case onAppear
         case queryChanged(String)
         case searchRepositoriesResult(Result<SearchRepoResultDto, APIError>)
         case item(id: Int, action: RepositoryItemCore.Action)
@@ -54,6 +55,8 @@ extension SearchRepositoriesCore {
     static let reducer = Reducer<State, Action, Environment>.combine(
         .init { state, action, env in
             switch action {
+            case .onAppear:
+                return .init(value: .queryChanged("github"))
             case let .queryChanged(query):
                 state.viewState.query = query
                 return env.gitHubRepository
