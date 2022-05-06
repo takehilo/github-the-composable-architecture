@@ -3,6 +3,12 @@ import ComposableArchitecture
 
 struct RankedItemView: View {
     let store: Store<RankedItemCore.State, RankedItemCore.Action>
+    @ObservedObject private var viewStore: ViewStore<Void, RankedItemCore.Action>
+
+    init(store: Store<RankedItemCore.State, RankedItemCore.Action>) {
+        self.store = store
+        self.viewStore = ViewStore(store.stateless)
+    }
 
     var body: some View {
         SwitchStore(store) {
@@ -39,6 +45,9 @@ struct RankedItemView: View {
             Default {
                 EmptyView()
             }
+        }
+        .onAppear {
+            viewStore.send(.onAppear)
         }
     }
 }

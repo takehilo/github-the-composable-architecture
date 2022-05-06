@@ -1,5 +1,5 @@
 import Combine
 
 protocol GitHubRepository {
-    func searchRepositories(query: String) -> AnyPublisher<SearchRepoResultDto, APIError>
+    func searchRepositories(query: String, page: Int) -> AnyPublisher<SearchRepoResultDto, APIError>
 }

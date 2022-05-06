@@ -7,6 +7,7 @@ extension RankedSearchRepositoriesCore {
     struct State: Equatable {
         var viewState = ViewState()
         var items = IdentifiedArrayOf<RankedItemCore.State>()
+        var currentPage = 1
     }
 }
 
@@ -51,13 +52,22 @@ extension RankedSearchRepositoriesCore {
             switch action {
             case .onAppear:
                 return .init(value: .queryChanged("github"))
+            case let .item(id: id, action: .onAppear):
+                if id == state.items.last?.id {
+                    return env.gitHubRepository
+                        .searchRepositories(query: state.viewState.query, page: state.currentPage)
+                        .catchToEffect(Action.searchRepositoriesResult)
+                }
+                return .none
             case let .queryChanged(query):
                 state.viewState.query = query
                 return env.gitHubRepository
-                    .searchRepositories(query: query)
+                    .searchRepositories(query: query, page: state.currentPage)
                     .catchToEffect(Action.searchRepositoriesResult)
             case let .searchRepositoriesResult(.success(dto)):
-                state.items = .init(dto: dto)
+                let items = IdentifiedArrayOf<RankedItemCore.State>(dto: dto)
+                items.forEach { state.items.append($0) }
+                state.currentPage += 1
                 return .none
             case let .searchRepositoriesResult(.failure(error)):
                 print(error)
@@ -66,5 +76,6 @@ extension RankedSearchRepositoriesCore {
                 return .none
             }
         }
+        .debug()
     )
 }

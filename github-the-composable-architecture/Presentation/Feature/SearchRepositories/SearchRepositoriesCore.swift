@@ -6,7 +6,8 @@ enum SearchRepositoriesCore {}
 extension SearchRepositoriesCore {
     struct State: Equatable {
         var viewState = ViewState()
-        var repositoryItems = IdentifiedArrayOf<RepositoryItemCore.State>()
+        var items = IdentifiedArrayOf<RepositoryItemCore.State>()
+        var currentPage = 1
     }
 }
 
@@ -51,19 +52,28 @@ extension SearchRepositoriesCore {
             switch action {
             case .onAppear:
                 return .init(value: .queryChanged("github"))
+            case let .item(id: id, action: .onAppear):
+                if id == state.items.last?.id {
+                    return env.gitHubRepository
+                        .searchRepositories(query: state.viewState.query, page: state.currentPage)
+                        .catchToEffect(Action.searchRepositoriesResult)
+                }
+                return .none
             case let .queryChanged(query):
                 state.viewState.query = query
                 return env.gitHubRepository
-                    .searchRepositories(query: query)
-//                    .debounce(for: 0.5, scheduler: env.scheduler)
+                    .searchRepositories(query: query, page: state.currentPage)
                     .catchToEffect(Action.searchRepositoriesResult)
             case let .searchRepositoriesResult(.success(dto)):
-                state.repositoryItems = .init(dto: dto)
+                let items = IdentifiedArrayOf<RepositoryItemCore.State>(dto: dto)
+                items.forEach { state.items.append($0) }
+                state.currentPage += 1
                 return .none
             case let .searchRepositoriesResult(.failure(error)):
                 print(error)
                 return .none
             }
         }
+        .debug()
     )
 }

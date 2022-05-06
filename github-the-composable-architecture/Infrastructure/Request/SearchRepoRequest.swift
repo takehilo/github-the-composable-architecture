@@ -7,8 +7,13 @@ struct SearchRepoRequest: GitHubAPIBaseRequest {
     let queryParameters: [String: Any]?
 
     init(
-        query: String
+        query: String,
+        page: Int
     ) {
-        self.queryParameters = ["q": query, "per_page": 100]
+        self.queryParameters = [
+            "q": query,
+            "page": page.description,
+            "per_page": 100
+        ]
     }
 }

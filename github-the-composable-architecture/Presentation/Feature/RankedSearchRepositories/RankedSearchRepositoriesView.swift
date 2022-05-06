@@ -17,9 +17,12 @@ struct RankedSearchRepositoriesView: View {
                     store.scope(
                         state: \.items,
                         action: RankedSearchRepositoriesCore.Action.item(id:action:)),
-                    content: RankedItemView.init(store:)
+                    content: {
+                        RankedItemView(store: $0)
+                    }
                 )
             }
+            .listStyle(PlainListStyle())
             .searchable(
                 text: viewStore.binding(
                     get: \.query,

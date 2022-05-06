@@ -37,6 +37,7 @@ extension RankedItemCore {
         case gold(GoldItemCore.Action)
         case platinum(PlatinumItemCore.Action)
         case diamond(DiamondItemCore.Action)
+        case onAppear
     }
 }
 

@@ -23,6 +23,7 @@ extension RepositoryItemCore {
 // MARK: - Action
 extension RepositoryItemCore {
     enum Action: Equatable {
+        case onAppear
     }
 }
 

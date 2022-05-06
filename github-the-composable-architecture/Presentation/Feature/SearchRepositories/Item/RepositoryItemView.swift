@@ -26,6 +26,9 @@ struct RepositoryItemView: View {
             }
         }
         .padding(8)
+        .onAppear {
+            viewStore.send(.onAppear)
+        }
     }
 }
 

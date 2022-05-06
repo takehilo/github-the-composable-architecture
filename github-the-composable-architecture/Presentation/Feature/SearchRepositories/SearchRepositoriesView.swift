@@ -15,11 +15,14 @@ struct SearchRepositoriesView: View {
             List {
                 ForEachStore(
                     store.scope(
-                        state: \.repositoryItems,
+                        state: \.items,
                         action: SearchRepositoriesCore.Action.item(id:action:)),
-                    content: RepositoryItemView.init(store:)
+                    content: {
+                        RepositoryItemView(store: $0)
+                    }
                 )
             }
+            .listStyle(PlainListStyle())
             .searchable(
                 text: viewStore.binding(
                     get: \.query,

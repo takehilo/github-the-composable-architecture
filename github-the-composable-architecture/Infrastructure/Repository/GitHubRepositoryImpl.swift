@@ -11,7 +11,7 @@ final class GitHubRepositoryImpl {
 }
 
 extension GitHubRepositoryImpl: GitHubRepository {
-    func searchRepositories(query: String) -> AnyPublisher<SearchRepoResultDto, APIError> {
-        apiClient.send(request: SearchRepoRequest(query: query))
+    func searchRepositories(query: String, page: Int) -> AnyPublisher<SearchRepoResultDto, APIError> {
+        apiClient.send(request: SearchRepoRequest(query: query, page: page))
     }
 }

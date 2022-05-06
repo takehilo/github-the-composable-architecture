@@ -15,6 +15,10 @@ struct AppView: View {
             store: store.scope(
                 state: \.rankedSearchRepositories,
                 action: AppCore.Action.rankedSearchRepositories))
+//        SearchRepositoriesView(
+//            store: store.scope(
+//                state: \.searchRepositories,
+//                action: AppCore.Action.searchRepositories))
     }
 }
 
